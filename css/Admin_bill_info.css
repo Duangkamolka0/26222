@@ -243,6 +243,7 @@
 .bill-table-section {
   width: 100%;
   max-width: 1100px;
+  overflow-x: auto;
 }
 
 .bill-control-section {
@@ -269,6 +270,22 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bill-table {
+  width: 100%;
+  min-width: 700px; /* ความกว้างขั้นต่ำของตาราง */
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  table-layout: fixed;
+}
+
+.bill-table {
+  table-layout: fixed; /* เพิ่มบรรทัดนี้เพื่อให้ความกว้างของคอลัมน์เท่ากัน */
 }
 
 .bill-table th {
